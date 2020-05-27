@@ -255,7 +255,7 @@
       <HintPath>Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/golde/Desktop/New Unity Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/golde/Desktop/VRSubject/VRSubject.git/trunk/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.14f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -699,6 +699,7 @@
     <None Include="Packages\com.unity.collab-proxy\Tests\Editor\Unity.CollabProxy.EditorTests.asmdef" />
     <None Include="Packages\com.unity.ext.nunit\net35\unity-custom\This is a custom build DONT include.txt" />
     <None Include="Packages\com.unity.ext.nunit\net35\unity-custom\nunit.framework.xml" />
+    <None Include="Packages\com.unity.google.resonance.audio\Tests\Editor\Unity.XR.GVR.Audio.EditorTests.asmdef" />
     <None Include="Packages\com.unity.ide.rider\Rider\Editor\com.unity.ide.rider.asmdef" />
     <None Include="Packages\com.unity.ide.vscode\Editor\Unity.com.unity.vscode.Editor.asmdef" />
     <None Include="Packages\com.unity.test-framework\UnityEditor.TestRunner\UnityEditor.TestRunner.asmdef" />
@@ -720,6 +721,7 @@
     <None Include="Packages\com.unity.ugui\Runtime\UnityEngine.UI.asmdef" />
     <None Include="Packages\com.unity.ugui\Tests\Editor\UnityEditor.UI.EditorTests.asmdef" />
     <None Include="Packages\com.unity.ugui\Tests\Runtime\UnityEngine.UI.Tests.asmdef" />
+    <None Include="Packages\com.unity.xr.googlevr.android\Tests\Editor\Unity.XR.GVR.Android.EditorTests.asmdef" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
