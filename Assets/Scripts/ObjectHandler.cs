@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ObjectHandler : MonoBehaviour
 {
@@ -15,5 +16,15 @@ public class ObjectHandler : MonoBehaviour
         {
             Debug.Log("YOU WIN!");
         }
+
+        for (int i = 0; i < ObjectsToFind.Length; i = 4)
+        {
+            if (ObjectsToFind[i] == false)
+            {
+                ObjectsUI[i].GetComponent<Image>().color = Color.black;
+            }
+        }
     }
+
+ 
 }
