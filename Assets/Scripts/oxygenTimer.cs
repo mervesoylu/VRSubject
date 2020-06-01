@@ -9,17 +9,28 @@ public class oxygenTimer : MonoBehaviour
     public float timer;
     public float maxTime = 60;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject objectHandler;
 
-    }
+    public bool time = true;
 
-    // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        var percent = timer / maxTime;
-        oxgTimer.fillAmount = Mathf.Lerp(0, 1, percent);
+        if (time == true)
+        {
+            timer -= Time.deltaTime;
+            var percent = timer / maxTime;
+            oxgTimer.fillAmount = Mathf.Lerp(0, 1, percent);
+        }
+
+        if (timer <= 0)
+        {
+            Debug.Log("YOU LOSE!");
+        }
+
+        if (objectHandler.GetComponent<ObjectHandler>().objectCount == objectHandler.GetComponent<ObjectHandler>().MaxObjects)
+        {
+            time = false;
+            oxgTimer.fillAmount = timer/maxTime;
+        }
     }
 }

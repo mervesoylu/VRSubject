@@ -8,6 +8,10 @@ public class InteractionBehaviour : MonoBehaviour
     public float speed = 2;
     private bool buttonPressed = false;
 
+    public bool addToCount = false;
+
+    public GameObject objectHandler;
+
     public void ButtonClick()
     {
         buttonPressed = true;
@@ -35,5 +39,17 @@ public class InteractionBehaviour : MonoBehaviour
             var fscript = GetComponent<floater>();
             fscript.enabled = false;
         }
+
+        if (transform.position == target.transform.position)
+        {
+            addToCount = true;
+        }
+
+        if (addToCount == true)
+        {
+            objectHandler.GetComponent<ObjectHandler>().objectCount++;
+            Destroy(gameObject);
+        }
     }
+
 }
