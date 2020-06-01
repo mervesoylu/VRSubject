@@ -17,7 +17,7 @@ public class ObjectHandler : MonoBehaviour
             Debug.Log("YOU WIN!");
         }
 
-        for (int i = 0; i < ObjectsToFind.Length; i = 4)
+        for (int i = 0; i < ObjectsToFind.Length; i++)
         {
             if (ObjectsToFind[i] == false)
             {
