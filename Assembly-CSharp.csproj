@@ -193,6 +193,7 @@
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ObjectHandler.cs" />
     <Compile Include="Assets\Scripts\floater.cs" />
+    <Compile Include="Assets\Scripts\gameUI.cs" />
     <Compile Include="Assets\Scripts\gazeTimer.cs" />
     <Compile Include="Assets\Scripts\oxygenTimer.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
