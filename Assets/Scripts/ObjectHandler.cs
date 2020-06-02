@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class ObjectHandler : MonoBehaviour
 {
+    public GameObject WinPanel;
+
     public GameObject[] ObjectsToFind;
     public GameObject[] ObjectsUI;
 
@@ -15,6 +17,7 @@ public class ObjectHandler : MonoBehaviour
         if (objectCount == MaxObjects)
         {
             Debug.Log("YOU WIN!");
+            WinPanel.SetActive(true);
         }
 
         for (int i = 0; i < ObjectsToFind.Length; i++)

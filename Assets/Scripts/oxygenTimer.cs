@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class oxygenTimer : MonoBehaviour
 {
+    public GameObject LosePanel;
+
     public Image oxgTimer;
     public float timer;
     public float maxTime = 60;
@@ -25,6 +27,7 @@ public class oxygenTimer : MonoBehaviour
         if (timer <= 0)
         {
             Debug.Log("YOU LOSE!");
+            LosePanel.SetActive(true);
         }
 
         if (objectHandler.GetComponent<ObjectHandler>().objectCount == objectHandler.GetComponent<ObjectHandler>().MaxObjects)
