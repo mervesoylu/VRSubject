@@ -24,10 +24,10 @@ public class floater : MonoBehaviour
     void Start()
     {
         // Store the starting position & rotation of the object
-        posOffset = transform.position;
+         posOffset = transform.position;
 
         timeOffset = Random.Range(0, 10);
-        amplitude = Random.Range(0.1f, 0.7f);
+        amplitude = Random.Range(0.1f, 0.4f);
         degreesPerSecond = Random.Range(15, 30);
     }
 
@@ -35,11 +35,12 @@ public class floater : MonoBehaviour
     void Update()
     {
         // Spin object around Y-Axis
-        transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f), Space.World);
+        transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f));
 
         // Float up/down with a Sin()
         tempPos = posOffset;
         tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency + timeOffset) * amplitude;
+        
 
         transform.position = tempPos;
     }

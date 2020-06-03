@@ -20,7 +20,7 @@ public class InteractionBehaviour : MonoBehaviour
     public void OnEnter()
     {
        var fscript = GetComponent<floater>();
-        fscript.enabled = false;
+       fscript.enabled = false;
     }
 
     public void OnExit()
