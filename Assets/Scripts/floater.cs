@@ -6,42 +6,47 @@
 using UnityEngine;
 using System.Collections;
 
-// Makes objects float up & down while gently spinning.
+
 public class floater : MonoBehaviour
 {
-    // User Inputs
-    public float degreesPerSecond = 0;
-    public float amplitude = 0;
-    public float frequency = 1f;
+    private float PlanetRotateSpeed;
+    private float OrbitSpeed;
 
-    private float timeOffset = 0;
+    private bool up = true;
+    private float speed;
 
-    // Position Storage Variables
-    Vector3 posOffset = new Vector3();
-    Vector3 tempPos = new Vector3();
-
-    // Use this for initialization
     void Start()
     {
-        // Store the starting position & rotation of the object
-         posOffset = transform.position;
+        PlanetRotateSpeed = Random.Range(-90, 90);
+        OrbitSpeed = Random.Range(5, 15);
 
-        timeOffset = Random.Range(0, 10);
-        amplitude = Random.Range(0.1f, 0.4f);
-        degreesPerSecond = Random.Range(15, 30);
+        speed = Random.Range(.0001f, 0.015f);
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Spin object around Y-Axis
-        transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f));
+        transform.Rotate(transform.up * PlanetRotateSpeed * Time.deltaTime);
+        transform.RotateAround(Vector3.zero, Vector3.up, OrbitSpeed * Time.deltaTime);
 
-        // Float up/down with a Sin()
-        tempPos = posOffset;
-        tempPos.y += Mathf.Sin(Time.fixedTime * Mathf.PI * frequency + timeOffset) * amplitude;
-        
-
-        transform.position = tempPos;
+        var temp = transform.position;
+        if (up == true)
+        {
+            temp.y += speed;
+            transform.position = temp;
+            if (transform.position.y >= 1.75f)
+            {
+                up = false;
+            }
+        }
+        if (up == false)
+        {
+            temp.y -= speed;
+            transform.position = temp;
+            if (transform.position.y <= 1.25f)
+            {
+                up = true;
+            }
+        }
     }
 }
