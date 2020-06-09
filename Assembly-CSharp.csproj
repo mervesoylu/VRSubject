@@ -190,10 +190,11 @@
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\Scripts\InteractionBehaviour.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MoonFloater.cs" />
+    <Compile Include="Assets\Scripts\MoonInteraction.cs" />
     <Compile Include="Assets\Scripts\ObjectHandler.cs" />
     <Compile Include="Assets\Scripts\floater.cs" />
     <Compile Include="Assets\Scripts\gazeTimer.cs" />
-    <Compile Include="Assets\Scripts\orbitScript.cs" />
     <Compile Include="Assets\Scripts\oxygenTimer.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

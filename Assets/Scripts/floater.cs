@@ -20,7 +20,7 @@ public class floater : MonoBehaviour
         PlanetRotateSpeed = Random.Range(-90, 90);
         OrbitSpeed = Random.Range(5, 15);
 
-        speed = Random.Range(.0001f, 0.015f);
+        speed = Random.Range(.0001f, 0.001f);
 
     }
 
