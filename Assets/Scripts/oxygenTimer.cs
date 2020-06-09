@@ -17,6 +17,7 @@ public class oxygenTimer : MonoBehaviour
 
     void Update()
     {
+        //timer starts counting down and the corresponding UI goes down with it
         if (time == true)
         {
             timer -= Time.deltaTime;
@@ -24,12 +25,14 @@ public class oxygenTimer : MonoBehaviour
             oxgTimer.fillAmount = Mathf.Lerp(0, 1, percent);
         }
 
+        //once the timer reacher 0, LosPanel it activated
         if (timer <= 0)
         {
             Debug.Log("YOU LOSE!");
             LosePanel.SetActive(true);
         }
 
+        //if the player finds all the objects before the oxygen runs out, the timer is stopped
         if (objectHandler.GetComponent<ObjectHandler>().objectCount == objectHandler.GetComponent<ObjectHandler>().MaxObjects)
         {
             time = false;

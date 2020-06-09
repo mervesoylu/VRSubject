@@ -17,18 +17,21 @@ public class floater : MonoBehaviour
 
     void Start()
     {
+        //randomises the degrees of rotation for each object
         PlanetRotateSpeed = Random.Range(-90, 90);
         OrbitSpeed = Random.Range(5, 15);
-
+        //randomises the speed objects move up and down for each object
         speed = Random.Range(.0001f, 0.001f);
 
     }
 
     void Update()
     {
+        //rotates the object on its own axis as well as around the Vector(0,0,0)
         transform.Rotate(transform.up * PlanetRotateSpeed * Time.deltaTime);
         transform.RotateAround(Vector3.zero, Vector3.up, OrbitSpeed * Time.deltaTime);
 
+        //moves the object up and down creating a bouncing effect
         var temp = transform.position;
         if (up == true)
         {
