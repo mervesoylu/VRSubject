@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Boo.Lang;
 
 public class ObjectHandler : MonoBehaviour
 {
@@ -9,8 +10,19 @@ public class ObjectHandler : MonoBehaviour
     public GameObject[] ObjectsToFind;
     public GameObject[] ObjectsUI;
 
+
+    public List<GameObject> allObjects = new List<GameObject>();
+
     public int objectCount = 0;
     public int MaxObjects = 5;
+    
+
+    public void Start()
+    {
+        
+
+        
+    }
 
     public void Update()
     {
