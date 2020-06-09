@@ -15,6 +15,8 @@ public class InteractionBehaviour : MonoBehaviour
 
     private bool decrease = false;
     public float decreaseTime = 5.0f;
+    private bool increase = false;
+    public float increaseTime = 5.0f;
 
     public void ButtonClick()
     {
@@ -65,6 +67,18 @@ public class InteractionBehaviour : MonoBehaviour
             oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime;
             Destroy(gameObject);
             decrease = false;
+        }
+
+        if ((transform.position == target.transform.position) && (tag == "Oxygen"))
+        {
+            increase = true;
+        }
+
+        if (increase == true)
+        {
+            oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime;
+            Destroy(gameObject);
+            increase = false;
         }
     }
 
