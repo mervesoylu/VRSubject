@@ -11,6 +11,10 @@ public class InteractionBehaviour : MonoBehaviour
     public bool addToCount = false;
 
     public GameObject objectHandler;
+    public GameObject oxygenTimer;
+
+    private bool decrease = false;
+    public float decreaseTime = 5.0f;
 
     public void ButtonClick()
     {
@@ -40,7 +44,7 @@ public class InteractionBehaviour : MonoBehaviour
             fscript.enabled = false;
         }
 
-        if (transform.position == target.transform.position)
+        if ((transform.position == target.transform.position) && (tag == "ObjectsToFind"))
         {
             addToCount = true;
         }
@@ -49,6 +53,18 @@ public class InteractionBehaviour : MonoBehaviour
         {
             objectHandler.GetComponent<ObjectHandler>().objectCount++;
             Destroy(gameObject);
+        }
+
+        if ((transform.position == target.transform.position) && (tag == "OtherObjects"))
+        {
+            decrease = true;
+        }
+
+        if (decrease == true)
+        {
+            oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime;
+            Destroy(gameObject);
+            decrease = false;
         }
     }
 
