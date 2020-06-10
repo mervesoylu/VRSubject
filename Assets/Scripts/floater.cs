@@ -9,6 +9,10 @@ using System.Collections;
 
 public class floater : MonoBehaviour
 {
+    public Transform orbit;
+    public float upPosition;
+    public float downPosition;
+
     private float PlanetRotateSpeed;
     private float OrbitSpeed;
 
@@ -29,7 +33,7 @@ public class floater : MonoBehaviour
     {
         //rotates the object on its own axis as well as around the Vector(0,0,0)
         transform.Rotate(transform.up * PlanetRotateSpeed * Time.deltaTime);
-        transform.RotateAround(Vector3.zero, Vector3.up, OrbitSpeed * Time.deltaTime);
+        transform.RotateAround(orbit.transform.position, Vector3.up, OrbitSpeed * Time.deltaTime);
 
         //moves the object up and down creating a bouncing effect
         var temp = transform.position;
@@ -37,7 +41,7 @@ public class floater : MonoBehaviour
         {
             temp.y += speed;
             transform.position = temp;
-            if (transform.position.y >= 1.75f)
+            if (transform.position.y >= upPosition)
             {
                 up = false;
             }
@@ -46,7 +50,7 @@ public class floater : MonoBehaviour
         {
             temp.y -= speed;
             transform.position = temp;
-            if (transform.position.y <= 1.25f)
+            if (transform.position.y <= downPosition)
             {
                 up = true;
             }
