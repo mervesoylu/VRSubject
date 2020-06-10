@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class oxygenTimer : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class oxygenTimer : MonoBehaviour
     public GameObject objectHandler;
 
     public bool time = true;
+    public bool panel = false;
+
+    IEnumerator waitTime()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(1);
+    }
 
     void Update()
     {
@@ -30,6 +38,7 @@ public class oxygenTimer : MonoBehaviour
         {
             Debug.Log("YOU LOSE!");
             LosePanel.SetActive(true);
+            panel = true;
         }
 
         //if the player finds all the objects before the oxygen runs out, the timer is stopped
@@ -37,6 +46,11 @@ public class oxygenTimer : MonoBehaviour
         {
             time = false;
             oxgTimer.fillAmount = timer/maxTime;
+        }
+
+        if (panel == true)
+        {
+            StartCoroutine(waitTime());
         }
     }
 }
