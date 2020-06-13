@@ -2097,7 +2097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1949964652}
-  target: {fileID: 30033139}
+  target: {fileID: 30033140}
+  speed: 2
 --- !u!114 &233138797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,7 +4780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1949964652}
-  target: {fileID: 74776749}
+  target: {fileID: 74776750}
+  speed: 2
 --- !u!114 &702742893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7703,7 +7705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1949964652}
-  target: {fileID: 953089823}
+  target: {fileID: 953089824}
+  speed: 2
 --- !u!114 &1234280392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12633,7 +12636,7 @@ PrefabInstance:
     - target: {fileID: 7444404953858468029, guid: f8da923f9da26e941a8b7a2749a46161,
         type: 3}
       propertyPath: maxReticleDistance
-      value: 700
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7444404954388632769, guid: f8da923f9da26e941a8b7a2749a46161,
         type: 3}
