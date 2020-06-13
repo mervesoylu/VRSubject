@@ -9,7 +9,6 @@ public class ObjectHandler : MonoBehaviour
 
     public GameObject[] ObjectsToFind;
     public GameObject[] ObjectsUI;
-    public GameObject[] ObjectUIFound;
 
 
     public List<GameObject> allObjects = new List<GameObject>();
