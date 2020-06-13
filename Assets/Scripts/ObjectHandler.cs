@@ -9,6 +9,7 @@ public class ObjectHandler : MonoBehaviour
 
     public GameObject[] ObjectsToFind;
     public GameObject[] ObjectsUI;
+    public GameObject[] ObjectUIFound;
 
 
     public List<GameObject> allObjects = new List<GameObject>();
@@ -18,12 +19,6 @@ public class ObjectHandler : MonoBehaviour
 
     public bool panel = false;
     
-    public void Start()
-    {
-        
-
-        
-    }
 
     public void Update()
     {
@@ -38,7 +33,7 @@ public class ObjectHandler : MonoBehaviour
         {
             if (ObjectsToFind[i] == false)
             {
-                ObjectsUI[i].GetComponent<Image>().color = Color.black;
+                Destroy(ObjectsUI[i]);
             }
         }
 
