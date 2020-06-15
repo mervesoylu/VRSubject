@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3790682341319227824}
   - component: {fileID: 3790682341319227822}
   - component: {fileID: 7317741634839090706}
+  - component: {fileID: 1686909577422407338}
   m_Layer: 0
   m_Name: OtherObject
   m_TagString: Object
@@ -146,6 +147,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1686909577422407338}
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!82 &3790682341319227824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -254,9 +270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c5a1141f179d44a9152dd1f1dacbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  degreesPerSecond: 15
-  amplitude: 0.3
-  frequency: 0.5
+  orbit: {fileID: 0}
+  upPosition: 0
+  downPosition: 0
 --- !u!114 &7317741634839090706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,3 +287,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 2
+  addToCount: 0
+  objectHandler: {fileID: 0}
+  oxygenTimer: {fileID: 0}
+  timer: {fileID: 0}
+  timerbg: {fileID: 0}
+  decreaseTime: 5
+  increaseTime: 5
+  trash: {fileID: 0}
+--- !u!114 &1686909577422407338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3790682341319227828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f82bf1157aca4b49ad0f3941bb9b5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correct: {fileID: 0}
+  incorrect: {fileID: 0}
+  buttonPressed: 0

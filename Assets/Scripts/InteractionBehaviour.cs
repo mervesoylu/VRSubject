@@ -24,6 +24,7 @@ public class InteractionBehaviour : MonoBehaviour
 
     public Transform trash;
 
+
     public void ChangeColor()
     {
         timer.GetComponent<Image>().color = new Color(0, 255, 247);
@@ -66,6 +67,7 @@ public class InteractionBehaviour : MonoBehaviour
         if ((transform.position == target.transform.position) && (tag == "ObjectsToFind"))
         {
             addToCount = true;
+
         }
         //and a point is added to the objectCount and the object is destroyed
         if (addToCount == true)
@@ -106,6 +108,10 @@ public class InteractionBehaviour : MonoBehaviour
             Invoke("ChangeColor", 1);
             increase = false;
         }
+
+        
     }
+
+
 
 }
