@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InteractionBehaviour : MonoBehaviour
 {
@@ -12,11 +14,20 @@ public class InteractionBehaviour : MonoBehaviour
 
     public GameObject objectHandler;
     public GameObject oxygenTimer;
+    public GameObject timer;
 
     private bool decrease = false;
     public float decreaseTime = 5.0f;
     private bool increase = false;
     public float increaseTime = 5.0f;
+
+    public Transform trash;
+
+    public void ChangeColor()
+    {
+        timer.GetComponent<Image>().color = new Color(0, 255, 247);
+        Debug.Log("COLOR HAS CHANGED!");
+    }
 
     public void ButtonClick()
     {
@@ -71,7 +82,9 @@ public class InteractionBehaviour : MonoBehaviour
         if (decrease == true)
         {
             oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime;
-            Destroy(gameObject);
+            transform.position = trash.position;
+            timer.GetComponent<Image>().color = Color.red;
+            Invoke("ChangeColor" , 1);
             decrease = false;
         }
 
@@ -84,7 +97,9 @@ public class InteractionBehaviour : MonoBehaviour
         if (increase == true)
         {
             oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime;
-            Destroy(gameObject);
+            transform.position = trash.position;
+            timer.GetComponent<Image>().color = Color.green;
+            Invoke("ChangeColor", 1);
             increase = false;
         }
     }
