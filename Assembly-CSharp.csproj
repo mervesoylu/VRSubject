@@ -190,6 +190,7 @@
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\Scripts\InteractionBehaviour.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MenuItemsBehaviour.cs" />
     <Compile Include="Assets\Scripts\MoonFloater.cs" />
     <Compile Include="Assets\Scripts\MoonInteraction.cs" />
     <Compile Include="Assets\Scripts\ObjectHandler.cs" />
