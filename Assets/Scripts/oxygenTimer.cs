@@ -42,10 +42,15 @@ public class oxygenTimer : MonoBehaviour
         }
 
         //if the player finds all the objects before the oxygen runs out, the timer is stopped
-        if (objectHandler.GetComponent<ObjectHandler>().objectCount == objectHandler.GetComponent<ObjectHandler>().MaxObjects)
+        if (objectHandler.GetComponent<ObjectHandler>().ObjectsToFind.Count == 0)
         {
             time = false;
             oxgTimer.fillAmount = timer/maxTime;
+        }
+
+        if (timer > maxTime)
+        {
+            timer = maxTime;
         }
 
         if (panel == true)

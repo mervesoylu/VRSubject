@@ -6,19 +6,43 @@ using UnityEngine.UI;
 
 public class audio : MonoBehaviour
 {
+    public GameObject incorrect;
     public GameObject correct;
-    
+    public Transform trash;
+    public Transform Player;
 
-    // Update is called once per frame
+    public bool buttonPressed;
+
     void Update()
     {
-        
+        if ((tag == "OtherObjects") && (buttonPressed == true) && (transform.position == Player.position))
+        {
+            incorrect.SetActive(true);
+            buttonPressed = false;
+        }
+
+        if (transform.position == trash.position)
+        {
+            incorrect.SetActive(false);
+            gameObject.SetActive(false);
+        }
+
+        if ((tag == "ObjectsToFind") && (buttonPressed == true) && (transform.position == Player.position))
+        {
+            correct.SetActive(true);
+            buttonPressed = false;
+        }
+
+        if (transform.position == trash.position)
+        {
+            correct.SetActive(false);
+            gameObject.SetActive(false);
+        }
     }
 
-
-    private void OnDestroy()
+    public void OnClick()
     {
-        correct.SetActive(true);
+        buttonPressed = true;
     }
 
 
