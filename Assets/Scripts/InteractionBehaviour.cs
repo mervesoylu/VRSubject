@@ -15,6 +15,7 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject objectHandler;
     public GameObject oxygenTimer;
     public GameObject timer;
+    public GameObject timerbg;
 
     private bool decrease = false;
     public float decreaseTime = 5.0f;
@@ -26,6 +27,7 @@ public class InteractionBehaviour : MonoBehaviour
     public void ChangeColor()
     {
         timer.GetComponent<Image>().color = new Color(0, 255, 247);
+        timerbg.GetComponent<Image>().color = Color.black;
         Debug.Log("COLOR HAS CHANGED!");
     }
 
@@ -84,6 +86,7 @@ public class InteractionBehaviour : MonoBehaviour
             oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime;
             transform.position = trash.position;
             timer.GetComponent<Image>().color = Color.red;
+            timerbg.GetComponent<Image>().color = new Color32(139, 0, 0, 255);
             Invoke("ChangeColor" , 1);
             decrease = false;
         }
@@ -99,6 +102,7 @@ public class InteractionBehaviour : MonoBehaviour
             oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime;
             transform.position = trash.position;
             timer.GetComponent<Image>().color = Color.green;
+            timerbg.GetComponent<Image>().color = new Color32(0, 100, 0, 255);
             Invoke("ChangeColor", 1);
             increase = false;
         }

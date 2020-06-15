@@ -173,6 +173,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -837,6 +842,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -1114,6 +1124,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -1309,6 +1324,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -1590,6 +1610,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -1747,6 +1772,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2062,6 +2092,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -2459,6 +2494,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -2687,6 +2727,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -2941,6 +2986,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -3142,6 +3192,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -3385,6 +3440,7 @@ RectTransform:
   m_Children:
   - {fileID: 462737312}
   - {fileID: 108863197}
+  - {fileID: 1448972359}
   - {fileID: 1992121545}
   - {fileID: 674516854}
   - {fileID: 422685519}
@@ -3589,7 +3645,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 399364180}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3780,6 +3836,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4095,6 +4156,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -4443,6 +4509,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -4504,6 +4575,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5151,6 +5227,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -5459,6 +5540,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -5514,6 +5600,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5829,6 +5920,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -6211,6 +6307,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -6266,6 +6367,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6581,6 +6687,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -6796,6 +6907,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -7030,6 +7146,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -7605,6 +7726,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -7765,6 +7891,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8080,6 +8211,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -8135,6 +8271,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8789,6 +8930,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -8889,6 +9035,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9018,6 +9169,80 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7281976148039998288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1448972358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448972359}
+  - component: {fileID: 1448972361}
+  - component: {fileID: 1448972360}
+  m_Layer: 5
+  m_Name: OxygenTank (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1448972359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448972358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 399364180}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -750, y: 0}
+  m_SizeDelta: {x: 102.24539, y: 900}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1448972360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448972358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1448972361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448972358}
+  m_CullTransparentMesh: 0
 --- !u!224 &1462240748 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
@@ -9969,6 +10194,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10329,6 +10559,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -10568,6 +10803,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -10898,6 +11138,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11088,7 +11333,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 399364180}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11307,6 +11552,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -11502,6 +11752,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -11697,6 +11952,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
@@ -11908,6 +12168,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 9007973197438092813, guid: c57efa18c8378dd4ba823c6eb6896d32,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c57efa18c8378dd4ba823c6eb6896d32, type: 3}
 --- !u!224 &3790682340264300128 stripped
@@ -12023,6 +12288,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 5339682086518956450, guid: 0f1c561c35748054eb7d208da6765370,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     - target: {fileID: 5339682086518956452, guid: 0f1c561c35748054eb7d208da6765370,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12195,7 +12465,7 @@ PrefabInstance:
     - target: {fileID: 7281976148446073894, guid: 08999680587458d489738f8fc64fb71d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7281976148446073894, guid: 08999680587458d489738f8fc64fb71d,
         type: 3}
@@ -12546,6 +12816,11 @@ PrefabInstance:
       propertyPath: trash
       value: 
       objectReference: {fileID: 763188007}
+    - target: {fileID: 7317741634839090706, guid: 793503be48fab7b458d20fc769350b87,
+        type: 3}
+      propertyPath: timerbg
+      value: 
+      objectReference: {fileID: 1448972358}
     m_RemovedComponents:
     - {fileID: 3790682341319227822, guid: 793503be48fab7b458d20fc769350b87, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 793503be48fab7b458d20fc769350b87, type: 3}
