@@ -24,12 +24,12 @@ public class oxygenTimer : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    void Update()
+    void fixedUpdate()
     {
         //timer starts counting down and the corresponding UI goes down with it
         if (time == true)
         {
-            timer -= Time.deltaTime;
+            timer -= Time.fixedDeltaTime;
             var percent = timer / maxTime;
             oxgTimer.fillAmount = Mathf.Lerp(0, 1, percent);
         }

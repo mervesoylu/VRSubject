@@ -12,6 +12,9 @@ public class MoonInteraction : MonoBehaviour
     public float speed = 2;
     private bool isPressed = false;
 
+    public GameObject jump;
+    public GameObject land;
+
     public void OnClick()
     {
         isPressed = true;
@@ -26,6 +29,8 @@ public class MoonInteraction : MonoBehaviour
             Player.transform.position = Vector3.MoveTowards(Player.transform.position, target.position, step);
 
             reticle.SetActive(false);
+            jump.SetActive(true);
+            land.SetActive(false);
         }
 
         if(Player.transform.position == target.position)
@@ -33,6 +38,8 @@ public class MoonInteraction : MonoBehaviour
             isPressed = false;
 
             reticle.SetActive(true);
+            land.SetActive(true);
+            jump.SetActive(false);
         }
        
     }
