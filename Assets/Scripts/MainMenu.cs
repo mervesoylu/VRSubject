@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,8 +11,12 @@ public class MainMenu : MonoBehaviour
     public Animator doorOpen;
     public float timer;
     public float delay = 5;
+    public float vaccuumTimer;
+    public float vaccuumDelay = 1;
     public GameObject panel;
     public float sceneLoad = 8;
+    public GameObject buttonSound;
+    public GameObject vaccuumSound;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +31,20 @@ public class MainMenu : MonoBehaviour
         {
             doorOpen.SetBool("isOpen", true);
             timer += Time.deltaTime;
+            vaccuumTimer += Time.deltaTime;
+            buttonSound.SetActive(true);
+
         }
 
         if (timer >= delay)
         {
             panel.SetActive(true);
+            buttonSound.SetActive(false);
+        }
+
+        if (timer >= vaccuumDelay)
+        {
+            vaccuumSound.SetActive(true);
         }
 
         if (timer >= sceneLoad)

@@ -13,6 +13,7 @@ public class oxygenTimer : MonoBehaviour
     public float maxTime = 60;
 
     public GameObject objectHandler;
+    public GameObject breatheSound;
 
     public bool time = true;
     public bool panel = false;
@@ -39,6 +40,17 @@ public class oxygenTimer : MonoBehaviour
             Debug.Log("YOU LOSE!");
             LosePanel.SetActive(true);
             panel = true;
+            breatheSound.SetActive(false);
+        }
+
+        if (timer <= 20)
+        {
+            breatheSound.SetActive(true);
+        }
+
+        if (timer >= 21)
+        {
+            breatheSound.SetActive(false);
         }
 
         //if the player finds all the objects before the oxygen runs out, the timer is stopped
