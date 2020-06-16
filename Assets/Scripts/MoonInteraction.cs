@@ -7,6 +7,8 @@ public class MoonInteraction : MonoBehaviour
     public GameObject Player;
     public Transform target;
 
+    public GameObject reticle;
+
     public float speed = 2;
     private bool isPressed = false;
 
@@ -22,11 +24,15 @@ public class MoonInteraction : MonoBehaviour
             //when the player presses the button on another moon, they move towards the target gameobject on that moon
             float step = speed * 100 * Time.deltaTime;
             Player.transform.position = Vector3.MoveTowards(Player.transform.position, target.position, step);
+
+            reticle.SetActive(false);
         }
 
         if(Player.transform.position == target.position)
         {
             isPressed = false;
+
+            reticle.SetActive(true);
         }
        
     }
