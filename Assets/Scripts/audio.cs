@@ -8,6 +8,7 @@ public class audio : MonoBehaviour
 {
     public GameObject incorrect;
     public GameObject correct;
+    public GameObject oxygen;
     public Transform trash;
     public Transform Player;
 
@@ -38,6 +39,19 @@ public class audio : MonoBehaviour
             correct.SetActive(false);
             gameObject.SetActive(false);
         }
+
+        if ((tag == "Oxygen") && (buttonPressed == true) && (transform.position == Player.position))
+        {
+            oxygen.SetActive(true);
+            buttonPressed = false;
+        }
+
+        if (transform.position == trash.position)
+        {
+            oxygen.SetActive(false);
+            gameObject.SetActive(false);
+        }
+
     }
 
     public void OnClick()

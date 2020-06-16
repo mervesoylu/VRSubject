@@ -78,7 +78,7 @@ public class InteractionBehaviour : MonoBehaviour
         //and the player loses some oxygen and the object is destroyed
         if (decrease == true)
         {
-            oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime * 3 * Time.deltaTime;
+            oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime * 5 * Time.deltaTime;
             Invoke("MoveToTrash", 0.4f);
             timer.GetComponent<Image>().color = Color.red;
             timerbg.GetComponent<Image>().color = new Color32(139, 0, 0, 255);
