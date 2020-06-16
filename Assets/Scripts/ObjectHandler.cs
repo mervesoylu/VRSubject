@@ -7,10 +7,10 @@ public class ObjectHandler : MonoBehaviour
 {
     public GameObject WinPanel;
     public Transform Player;
+    public GameObject PostIt;
 
     public List<GameObject> ObjectsToFind;
     public List<GameObject> ObjectsUI;
-
 
     public int objectCount = 12;
     public int MaxObjects = 0;
@@ -34,6 +34,9 @@ public class ObjectHandler : MonoBehaviour
                 Destroy(ObjectsUI[i]);
                 ObjectsUI.Remove(ObjectsUI[i]);
                 ObjectsToFind.Remove(ObjectsToFind[i]);
+
+                PostIt.GetComponent<Image>().color = Color.green;
+                Invoke("ChangeColor", 1);
             }
         }
 
@@ -45,6 +48,11 @@ public class ObjectHandler : MonoBehaviour
         Debug.Log(ObjectsToFind.Count);
 
     }
+
+    public void ChangeColor()
+    {
+        PostIt.GetComponent<Image>().color = new Color(255, 255, 255);
+}
 
     IEnumerator waitTime()
     {
