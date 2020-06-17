@@ -1489,7 +1489,6 @@ GameObject:
   - component: {fileID: 264532018}
   - component: {fileID: 264532021}
   - component: {fileID: 264532020}
-  - component: {fileID: 264532019}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -1519,26 +1518,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &264532019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264532017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69964718faf0b74a9c5fa6cb95f8b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LosePanel: {fileID: 1700877338}
-  oxgTimer: {fileID: 0}
-  timer: 45
-  maxTime: 45
-  objectHandler: {fileID: 1345446311}
-  breatheSound: {fileID: 2112366216}
-  time: 1
-  panel: 0
 --- !u!114 &264532020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f69964718faf0b74a9c5fa6cb95f8b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LosePanel: {fileID: 0}
+  LosePanel: {fileID: 1700877338}
   oxgTimer: {fileID: 1992121543}
   timer: 45
   maxTime: 45
@@ -4693,7 +4672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fd553c6183cb24fa9efab2e5e2712a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WinPanel: {fileID: 0}
+  WinPanel: {fileID: 310541407}
   Player: {fileID: 907292808}
   PostIt: {fileID: 999208371}
   ObjectsToFind:
@@ -7900,7 +7879,6 @@ GameObject:
   - component: {fileID: 2092984083}
   - component: {fileID: 2092984086}
   - component: {fileID: 2092984085}
-  - component: {fileID: 2092984084}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -7928,23 +7906,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.174, y: -0.1199999}
   m_SizeDelta: {x: 389.30902, y: 393.46063}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2092984084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092984082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &2092984085
 MonoBehaviour:
   m_ObjectHideFlags: 0
