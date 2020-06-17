@@ -25,14 +25,16 @@ public class InteractionBehaviour : MonoBehaviour
     public Transform trash;
 
 
-    public void ChangeColor()
+    IEnumerator ChangeColor()
     {
+        yield return new WaitForSeconds(1);
         timer.GetComponent<Image>().color = new Color(0, 255, 247);
         timerbg.GetComponent<Image>().color = Color.black;
     }
 
-    public void NoteChange()
+    IEnumerator NoteChange()
     {
+        yield return new WaitForSeconds(1);
         PostIt.GetComponent<Image>().color = new Color(255, 255, 255);
     }
 
@@ -70,7 +72,7 @@ public class InteractionBehaviour : MonoBehaviour
         //once the object reaches the player, and its tag is "ObjectsToFind", addToCount becomes true
         if ((transform.position == target.transform.position) && (tag == "ObjectsToFind"))
         {
-            Invoke("MoveToTrash", 0.4f);
+            StartCoroutine(MoveToTrash());
             buttonPressed = false;
         }
 
@@ -84,13 +86,13 @@ public class InteractionBehaviour : MonoBehaviour
         if (decrease == true)
         {
             oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime * Time.deltaTime;
-            Invoke("MoveToTrash", 0.4f);
+            StartCoroutine(MoveToTrash());
             timer.GetComponent<Image>().color = Color.red;
             timerbg.GetComponent<Image>().color = new Color32(139, 0, 0, 255);
-            Invoke("ChangeColor" , 1);
+            StartCoroutine(ChangeColor());
 
             PostIt.GetComponent<Image>().color = Color.red;
-            Invoke("NoteChange", 1);
+            StartCoroutine(NoteChange());
 
             decrease = false;
         }
@@ -105,17 +107,18 @@ public class InteractionBehaviour : MonoBehaviour
         if (increase == true)
         {
             oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime * Time.deltaTime;
-            Invoke("MoveToTrash", 0.4f);
+            StartCoroutine(MoveToTrash());
             timer.GetComponent<Image>().color = Color.green;
             timerbg.GetComponent<Image>().color = new Color32(0, 100, 0, 255);
-            Invoke("ChangeColor", 1);
+            StartCoroutine(ChangeColor());
             increase = false;
         }
     }
 
 
-    public void MoveToTrash()
+    IEnumerator MoveToTrash()
     {
+        yield return new WaitForSeconds(1f);
         transform.position = trash.position;
     }
 
