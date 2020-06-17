@@ -60,7 +60,7 @@ public class InteractionBehaviour : MonoBehaviour
         //when the button is pressed the object begins to move towards the player and the floater script is disabled
         if(buttonPressed == true)
         {
-            float step = speed * 10 * Time.deltaTime;
+            float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 
             var fscript = GetComponent<floater>();
@@ -70,7 +70,7 @@ public class InteractionBehaviour : MonoBehaviour
         //once the object reaches the player, and its tag is "ObjectsToFind", addToCount becomes true
         if ((transform.position == target.transform.position) && (tag == "ObjectsToFind"))
         {
-            Invoke("MoveToTrash", 0.2f);
+            Invoke("MoveToTrash", 0.4f);
             buttonPressed = false;
         }
 
@@ -83,7 +83,7 @@ public class InteractionBehaviour : MonoBehaviour
         //and the player loses some oxygen and the object is destroyed
         if (decrease == true)
         {
-            oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime * 5 * Time.deltaTime;
+            oxygenTimer.GetComponent<oxygenTimer>().timer -= decreaseTime * Time.deltaTime;
             Invoke("MoveToTrash", 0.4f);
             timer.GetComponent<Image>().color = Color.red;
             timerbg.GetComponent<Image>().color = new Color32(139, 0, 0, 255);
@@ -104,8 +104,8 @@ public class InteractionBehaviour : MonoBehaviour
         //and the player gains oxygen and the object is destroyed
         if (increase == true)
         {
-            oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime * 8 * Time.deltaTime;
-            Invoke("MoveToTrash", 0.2f);
+            oxygenTimer.GetComponent<oxygenTimer>().timer += increaseTime * Time.deltaTime;
+            Invoke("MoveToTrash", 0.4f);
             timer.GetComponent<Image>().color = Color.green;
             timerbg.GetComponent<Image>().color = new Color32(0, 100, 0, 255);
             Invoke("ChangeColor", 1);
