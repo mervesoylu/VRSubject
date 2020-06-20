@@ -258,7 +258,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.64
+      scalar: 6.036824
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -750,7 +750,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 9.34
+    angle: 15.132126
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -5012,7 +5012,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.76
+      scalar: 6.6343727
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5504,7 +5504,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 0
+    angle: 5.723174
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -9766,7 +9766,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.64
+      scalar: 5.778466
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10258,7 +10258,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 9.34
+    angle: 18.069227
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -14520,7 +14520,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.76
+      scalar: 6.815792
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -15012,7 +15012,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 0
+    angle: 4.428546
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -19274,7 +19274,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.76
+      scalar: 6.5734406
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -19766,7 +19766,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 0
+    angle: 5.2962794
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -24028,7 +24028,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.64
+      scalar: 5.8367987
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -24520,7 +24520,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 9.34
+    angle: 16.717775
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -28782,7 +28782,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.76
+      scalar: 6.3446274
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -29274,7 +29274,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 0
+    angle: 5.889988
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -33536,7 +33536,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.64
+      scalar: 5.9693785
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -34028,7 +34028,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 9.34
+    angle: 19.26515
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1

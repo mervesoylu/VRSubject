@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class spaceShuttleInteraction : MonoBehaviour
 {
     public bool winState = false;
+    public GameObject particles;
 
     public void Update()
     {
@@ -18,6 +19,7 @@ public class spaceShuttleInteraction : MonoBehaviour
         if (winState == true)
         {
             this.enabled = true;
+            particles.SetActive(true);
         }
     }
 
