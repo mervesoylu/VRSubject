@@ -6,24 +6,24 @@ using UnityEngine.UI;
 
 public class spaceShuttleInteraction : MonoBehaviour
 {
-    public Button yes;
-    public Button no;
+    public bool winState = false;
 
-    public GameObject panel;
-
-    // Start is called before the first frame update
-    public void OnClickSHuttle()
+    public void Update()
     {
-        panel.SetActive(true);
+        if (winState == false)
+        {
+            this.enabled = false;
+        }
+
+        if (winState == true)
+        {
+            this.enabled = true;
+        }
     }
-    
-    public void OnClickYes()
+
+    public void OnClick()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void OnClickNo()
-    {
-        panel.SetActive(false);
-    }
 }

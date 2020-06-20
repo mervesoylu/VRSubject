@@ -17,6 +17,7 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject timerbg;
     public GameObject PostIt;
     public GameObject WinPanel;
+    public GameObject Shuttle;
 
     private bool decrease = false;
     public float decreaseTime = 5f;
@@ -117,6 +118,8 @@ public class InteractionBehaviour : MonoBehaviour
 
         if (WinPanel.activeInHierarchy == true)
         {
+            Shuttle.GetComponent<spaceShuttleInteraction>().enabled = true;
+            Shuttle.GetComponent<spaceShuttleInteraction>().winState = true;
             this.enabled = false;
         }
     }

@@ -16,6 +16,8 @@ public class ObjectHandler : MonoBehaviour
     public int MaxObjects = 0;
 
     public bool panel = false;
+    private bool panelTrue = false;
+    private bool panelFalse = false;
     
 
     public void Update()
@@ -23,8 +25,7 @@ public class ObjectHandler : MonoBehaviour
         if (ObjectsToFind.Count == 0)
         {
             Debug.Log("YOU WIN!");
-            WinPanel.SetActive(true);
-            panel = true;
+            panelTrue = true;
         }
 
         for (int i = 0; i < ObjectsToFind.Count; i++)
@@ -45,19 +46,30 @@ public class ObjectHandler : MonoBehaviour
             StartCoroutine(waitTime());
         }
 
-        Debug.Log(ObjectsToFind.Count);
+        if (panelTrue == true)
+        {
+            WinPanel.SetActive(true);
+            panel = true;
+        }
+
+        if (panelFalse == true)
+        {
+            panelTrue = false;
+            WinPanel.SetActive(false);
+        }
 
     }
 
     public void ChangeColor()
     {
         PostIt.GetComponent<Image>().color = new Color(255, 255, 255);
-}
+    }
 
     IEnumerator waitTime()
     {
         yield return new WaitForSeconds(5);
-        Destroy(WinPanel);
+        panelFalse = true;
+        WinPanel.SetActive(false);
     }
  
 }
