@@ -194,6 +194,7 @@
     <Compile Include="Assets\Scripts\MoonFloater.cs" />
     <Compile Include="Assets\Scripts\MoonInteraction.cs" />
     <Compile Include="Assets\Scripts\ObjectHandler.cs" />
+    <Compile Include="Assets\Scripts\UITable.cs" />
     <Compile Include="Assets\Scripts\audio.cs" />
     <Compile Include="Assets\Scripts\floater.cs" />
     <Compile Include="Assets\Scripts\oxygenTimer.cs" />
