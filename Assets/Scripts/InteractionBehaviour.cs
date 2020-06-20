@@ -16,6 +16,7 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject timer;
     public GameObject timerbg;
     public GameObject PostIt;
+    public GameObject WinPanel;
 
     private bool decrease = false;
     public float decreaseTime = 5f;
@@ -112,6 +113,11 @@ public class InteractionBehaviour : MonoBehaviour
             timerbg.GetComponent<Image>().color = new Color32(0, 100, 0, 255);
             StartCoroutine(ChangeColor());
             increase = false;
+        }
+
+        if (WinPanel.activeInHierarchy == true)
+        {
+            this.enabled = false;
         }
     }
 

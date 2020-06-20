@@ -15,6 +15,8 @@ public class oxygenTimer : MonoBehaviour
     public GameObject objectHandler;
     public GameObject breatheSound;
 
+    public GameObject Reticle;
+
     public bool time = true;
     public bool panel = false;
 
@@ -41,6 +43,7 @@ public class oxygenTimer : MonoBehaviour
             LosePanel.SetActive(true);
             panel = true;
             breatheSound.SetActive(false);
+
         }
 
         if (timer <= 20)
@@ -68,6 +71,7 @@ public class oxygenTimer : MonoBehaviour
         if (panel == true)
         {
             StartCoroutine(waitTime());
+            Reticle.SetActive(false);
         }
     }
 }

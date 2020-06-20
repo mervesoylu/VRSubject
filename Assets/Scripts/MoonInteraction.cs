@@ -15,6 +15,8 @@ public class MoonInteraction : MonoBehaviour
     public GameObject jump;
     public GameObject land;
 
+    public GameObject oT;
+
     public void OnClick()
     {
         isPressed = true;
@@ -33,7 +35,7 @@ public class MoonInteraction : MonoBehaviour
             land.SetActive(false);
         }
 
-        if(Player.transform.position == target.position)
+        if((Player.transform.position == target.position) && (oT.GetComponent<oxygenTimer>().panel == false))
         {
             isPressed = false;
 
