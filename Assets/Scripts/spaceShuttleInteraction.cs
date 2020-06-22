@@ -10,6 +10,8 @@ public class spaceShuttleInteraction : MonoBehaviour
     public GameObject particles;
     public GameObject jetSound;
 
+    public bool canInteract = false;
+
     public void Update()
     {
         if (winState == false)
@@ -27,7 +29,10 @@ public class spaceShuttleInteraction : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene(0);
+        if (canInteract == true)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
 }

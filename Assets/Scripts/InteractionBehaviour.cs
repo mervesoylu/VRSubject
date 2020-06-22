@@ -119,6 +119,7 @@ public class InteractionBehaviour : MonoBehaviour
         if (WinPanel.activeInHierarchy == true)
         {
             Shuttle.GetComponent<spaceShuttleInteraction>().enabled = true;
+            Shuttle.GetComponent<spaceShuttleInteraction>().canInteract = true;
             Shuttle.GetComponent<spaceShuttleInteraction>().winState = true;
             this.enabled = false;
         }
@@ -127,7 +128,7 @@ public class InteractionBehaviour : MonoBehaviour
 
     IEnumerator MoveToTrash()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         transform.position = trash.position;
     }
 

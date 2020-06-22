@@ -12,7 +12,7 @@ public class ObjectHandler : MonoBehaviour
     public List<GameObject> ObjectsToFind;
     public List<GameObject> ObjectsUI;
 
-    public int objectCount = 12;
+    public int objectCount = 9;
     public int MaxObjects = 0;
 
     public bool panel = false;
