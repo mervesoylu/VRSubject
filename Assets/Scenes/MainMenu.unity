@@ -1165,14 +1165,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorLight: {fileID: 1588975992}
   doorClicked: 0
-  leftDoor: {fileID: 294292050}
-  rightDoor: {fileID: 1763549842}
   timer: 0
   vaccuumTimer: 0
   vaccuumDelay: 0.1
   panel: {fileID: 1405987449}
   buttonSound: {fileID: 667920268}
   vaccuumSound: {fileID: 2020792062}
+  animations:
+  - {fileID: 294292050}
+  - {fileID: 1763549842}
 --- !u!114 &1588975997
 MonoBehaviour:
   m_ObjectHideFlags: 0

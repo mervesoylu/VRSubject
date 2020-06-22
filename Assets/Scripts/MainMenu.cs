@@ -8,8 +8,6 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject doorLight;
     public bool doorClicked = false;
-    public Animator leftDoor;
-    public Animator rightDoor;
     public float timer;
     float delay = 5;
     public float vaccuumTimer;
@@ -18,6 +16,8 @@ public class MainMenu : MonoBehaviour
     float sceneLoad = 8;
     public GameObject buttonSound;
     public GameObject vaccuumSound;
+
+    public List<Animator> animations;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +30,14 @@ public class MainMenu : MonoBehaviour
     {
         if (doorClicked == true)
         {
-            leftDoor.SetBool("isOpen", true);
-            rightDoor.SetBool("isOpen", true);
             timer += Time.deltaTime;
             vaccuumTimer += Time.deltaTime;
             buttonSound.SetActive(true);
+
+            foreach (Animator anim in animations)
+            {
+                anim.SetBool("isOpen", true);
+            }
 
         }
 
