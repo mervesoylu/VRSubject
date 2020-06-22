@@ -8,6 +8,7 @@ public class spaceShuttleInteraction : MonoBehaviour
 {
     public bool winState = false;
     public GameObject particles;
+    public GameObject jetSound;
 
     public void Update()
     {
@@ -20,6 +21,7 @@ public class spaceShuttleInteraction : MonoBehaviour
         {
             this.enabled = true;
             particles.SetActive(true);
+            jetSound.SetActive(true);
         }
     }
 
