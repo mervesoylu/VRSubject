@@ -20,23 +20,23 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject Shuttle;
 
     private bool decrease = false;
-    public float decreaseTime = 5f;
+    public float decreaseTime = 10f;
     private bool increase = false;
-    public float increaseTime = 5f;
+    public float increaseTime = 10f;
 
     public Transform trash;
 
 
     IEnumerator ChangeColor()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         timer.GetComponent<Image>().color = new Color(0, 255, 247);
         timerbg.GetComponent<Image>().color = Color.black;
     }
 
     IEnumerator NoteChange()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         PostIt.GetComponent<Image>().color = new Color(255, 255, 255);
     }
 
@@ -76,6 +76,8 @@ public class InteractionBehaviour : MonoBehaviour
         {
             StartCoroutine(MoveToTrash());
             buttonPressed = false;
+
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
 
         //once the object reaches the player, and its tag is "OtherObjects", descrease becomes true
@@ -83,6 +85,8 @@ public class InteractionBehaviour : MonoBehaviour
         {
             decrease = true;
             buttonPressed = false;
+
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         //and the player loses some oxygen and the object is destroyed
         if (decrease == true)
@@ -128,7 +132,7 @@ public class InteractionBehaviour : MonoBehaviour
 
     IEnumerator MoveToTrash()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         transform.position = trash.position;
     }
 
