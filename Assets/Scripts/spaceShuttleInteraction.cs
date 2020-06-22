@@ -24,6 +24,7 @@ public class spaceShuttleInteraction : MonoBehaviour
             this.enabled = true;
             particles.SetActive(true);
             jetSound.SetActive(true);
+
         }
     }
 

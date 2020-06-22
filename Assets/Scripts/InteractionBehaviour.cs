@@ -18,6 +18,7 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject PostIt;
     public GameObject WinPanel;
     public GameObject Shuttle;
+    public GameObject breatheSound;
 
     private bool decrease = false;
     public float decreaseTime = 10f;
@@ -126,6 +127,7 @@ public class InteractionBehaviour : MonoBehaviour
             Shuttle.GetComponent<spaceShuttleInteraction>().canInteract = true;
             Shuttle.GetComponent<spaceShuttleInteraction>().winState = true;
             this.enabled = false;
+            breatheSound.SetActive(false);
         }
     }
 
