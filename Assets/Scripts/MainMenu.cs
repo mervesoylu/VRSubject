@@ -10,11 +10,11 @@ public class MainMenu : MonoBehaviour
     public bool doorClicked = false;
     public Animator doorOpen;
     public float timer;
-    public float delay = 5;
+    float delay = 5;
     public float vaccuumTimer;
-    public float vaccuumDelay = 1;
+    public float vaccuumDelay = 0.1f;
     public GameObject panel;
-    public float sceneLoad = 8;
+    float sceneLoad = 8;
     public GameObject buttonSound;
     public GameObject vaccuumSound;
 
