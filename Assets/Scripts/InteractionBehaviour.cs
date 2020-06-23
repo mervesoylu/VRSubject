@@ -16,7 +16,9 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject timer;
     public GameObject timerbg;
     public GameObject PostIt;
-    public GameObject WinPanel;
+    public GameObject WinPanel1;
+    public GameObject WinPanel2;
+    public GameObject WinPanel3;
     public GameObject Shuttle;
     public GameObject breatheSound;
 
@@ -79,6 +81,7 @@ public class InteractionBehaviour : MonoBehaviour
             buttonPressed = false;
 
             gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
 
         //once the object reaches the player, and its tag is "OtherObjects", descrease becomes true
@@ -88,6 +91,7 @@ public class InteractionBehaviour : MonoBehaviour
             buttonPressed = false;
 
             gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
         //and the player loses some oxygen and the object is destroyed
         if (decrease == true)
@@ -121,7 +125,7 @@ public class InteractionBehaviour : MonoBehaviour
             increase = false;
         }
 
-        if (WinPanel.activeInHierarchy == true)
+        if (WinPanel1.activeInHierarchy == true)
         {
             Shuttle.GetComponent<spaceShuttleInteraction>().enabled = true;
             Shuttle.GetComponent<spaceShuttleInteraction>().canInteract = true;

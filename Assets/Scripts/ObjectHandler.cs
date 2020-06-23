@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class ObjectHandler : MonoBehaviour
 {
-    public GameObject WinPanel;
+    public GameObject WinPanel1;
+    public GameObject WinPanel2;
+    public GameObject WinPanel3;
     public Transform Player;
     public GameObject PostIt;
 
@@ -41,22 +43,24 @@ public class ObjectHandler : MonoBehaviour
             }
         }
 
-        if (panel == true)
-        {
-            StartCoroutine(waitTime());
-        }
+        //if (panel == true)
+        //{
+        //    StartCoroutine(waitTime());
+        //}
 
         if (panelTrue == true)
         {
-            WinPanel.SetActive(true);
+            WinPanel1.SetActive(true);
+            WinPanel2.SetActive(true);
+            WinPanel3.SetActive(true);
             panel = true;
         }
 
-        if (panelFalse == true)
-        {
-            panelTrue = false;
-            WinPanel.SetActive(false);
-        }
+        //if (panelFalse == true)
+        //{
+        //    panelTrue = false;
+        //    WinPanel.SetActive(false);
+        //}
 
     }
 
@@ -69,7 +73,7 @@ public class ObjectHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         panelFalse = true;
-        WinPanel.SetActive(false);
+        WinPanel1.SetActive(false);
     }
  
 }
