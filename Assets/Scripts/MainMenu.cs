@@ -19,11 +19,8 @@ public class MainMenu : MonoBehaviour
 
     public List<Animator> animations;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public CameraShake cameraShake;
+
 
     // Update is called once per frame
     void Update()
@@ -38,6 +35,8 @@ public class MainMenu : MonoBehaviour
             {
                 anim.SetBool("isOpen", true);
             }
+
+            StartCoroutine(cameraShake.Shake(5f, 0.02f));
 
         }
 
