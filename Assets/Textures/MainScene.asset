@@ -68,10 +68,10 @@ MonoBehaviour:
     value: {x: 50, y: 95}
   minLuminance:
     overrideState: 1
-    value: -2
+    value: -2.1
   maxLuminance:
     overrideState: 1
-    value: -1
+    value: -0.8
   keyValue:
     overrideState: 0
     value: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
-  m_Name: New Post-processing Profile
+  m_Name: MainScene
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 3712887066075232438}
@@ -122,7 +122,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.81
+    value: 2.25
   color:
     overrideState: 1
     value: {r: 0.05866976, g: 0.04045035, b: 0.084905684, a: 1}
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -171,13 +171,13 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.69753474, g: 0.7075472, b: 0.54401034, a: 1}
+    value: {r: 0.8032597, g: 0.8113208, b: 0.6850303, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0
+    value: 0.565
   smoothness:
     overrideState: 1
     value: 0.21

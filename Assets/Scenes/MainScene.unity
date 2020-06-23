@@ -10768,7 +10768,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 1, b: 0.9098039, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11630,7 +11630,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 1, b: 0.9098039, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -22972,7 +22972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785444747 stripped
 GameObject:
@@ -24305,7 +24305,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e18a704c251cd604697897964d2ce339,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e18a704c251cd604697897964d2ce339,
         type: 3}
@@ -24408,7 +24408,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 1, b: 0.9098039, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -30825,7 +30825,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 1, b: 0.9098039, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -39356,7 +39356,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9882353, g: 1, b: 0.9098039, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -42415,7 +42415,7 @@ PrefabInstance:
     - target: {fileID: 5291944046921906602, guid: 1555307e0254bbb4eb271b7d3c1f570a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5291944046921906602, guid: 1555307e0254bbb4eb271b7d3c1f570a,
         type: 3}
