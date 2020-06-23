@@ -16,9 +16,7 @@ public class InteractionBehaviour : MonoBehaviour
     public GameObject timer;
     public GameObject timerbg;
     public GameObject PostIt;
-    public GameObject WinPanel1;
-    public GameObject WinPanel2;
-    public GameObject WinPanel3;
+    public GameObject WinPanel;
     public GameObject Shuttle;
     public GameObject breatheSound;
 
@@ -125,14 +123,17 @@ public class InteractionBehaviour : MonoBehaviour
             increase = false;
         }
 
-        if (WinPanel1.activeInHierarchy == true)
+        if (WinPanel.activeInHierarchy == true)
         {
             Shuttle.GetComponent<spaceShuttleInteraction>().enabled = true;
             Shuttle.GetComponent<spaceShuttleInteraction>().canInteract = true;
             Shuttle.GetComponent<spaceShuttleInteraction>().winState = true;
             this.enabled = false;
             breatheSound.SetActive(false);
+
+            PostIt.SetActive(false);
         }
+
     }
 
 

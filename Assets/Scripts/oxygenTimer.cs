@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class oxygenTimer : MonoBehaviour
 {
-    public GameObject LosePanel1;
-    public GameObject LosePanel2;
-    public GameObject LosePanel3;
+    public GameObject LosePanel;
 
     public Image oxgTimer;
     public float timer;
@@ -16,6 +14,8 @@ public class oxygenTimer : MonoBehaviour
 
     public GameObject objectHandler;
     public GameObject breatheSound;
+    public GameObject PostIt;
+    public GameObject loseRobot;
 
     public GameObject Reticle;
 
@@ -42,12 +42,11 @@ public class oxygenTimer : MonoBehaviour
         if (timer <= 0)
         {
             Debug.Log("YOU LOSE!");
-            LosePanel1.SetActive(true);
-            LosePanel2.SetActive(true);
-            LosePanel3.SetActive(true);
+            LosePanel.SetActive(true);
             panel = true;
             breatheSound.SetActive(false);
-
+            PostIt.SetActive(false);
+            loseRobot.SetActive(true);
         }
 
         if (timer <= 20)

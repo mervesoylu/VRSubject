@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class ObjectHandler : MonoBehaviour
 {
-    public GameObject WinPanel1;
-    public GameObject WinPanel2;
-    public GameObject WinPanel3;
+    public GameObject WinPanel;
     public Transform Player;
     public GameObject PostIt;
+    public GameObject winRobot;
 
     public List<GameObject> ObjectsToFind;
     public List<GameObject> ObjectsUI;
@@ -43,24 +42,12 @@ public class ObjectHandler : MonoBehaviour
             }
         }
 
-        //if (panel == true)
-        //{
-        //    StartCoroutine(waitTime());
-        //}
-
         if (panelTrue == true)
         {
-            WinPanel1.SetActive(true);
-            WinPanel2.SetActive(true);
-            WinPanel3.SetActive(true);
+            WinPanel.SetActive(true);
             panel = true;
+            winRobot.SetActive(true);
         }
-
-        //if (panelFalse == true)
-        //{
-        //    panelTrue = false;
-        //    WinPanel.SetActive(false);
-        //}
 
     }
 
@@ -73,7 +60,7 @@ public class ObjectHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         panelFalse = true;
-        WinPanel1.SetActive(false);
+        WinPanel.SetActive(false);
     }
  
 }
