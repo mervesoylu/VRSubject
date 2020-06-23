@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3176266278726773174}
   - component: {fileID: 3176266278726773166}
   - component: {fileID: 3176266278726773164}
-  - component: {fileID: 3176266278726773165}
   - component: {fileID: 3176266278726773171}
   - component: {fileID: 3176266278726773167}
   - component: {fileID: 9007973197438092813}
   - component: {fileID: 1769748469094974812}
+  - component: {fileID: 6909953740640376857}
   m_Layer: 0
   m_Name: OxygenTank
   m_TagString: Oxygen
@@ -49,7 +49,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3176266278726773163}
-  m_Mesh: {fileID: 4300000, guid: 5c39ec134a75d4a87a4a69a1be8dc5de, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 137df3466902d424983627567b86735e, type: 3}
 --- !u!23 &3176266278726773164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89,20 +89,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3176266278726773165
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3176266278726773163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 5c39ec134a75d4a87a4a69a1be8dc5de, type: 3}
 --- !u!114 &3176266278726773171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,11 +257,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 2
-  addToCount: 0
   objectHandler: {fileID: 0}
   oxygenTimer: {fileID: 0}
+  timer: {fileID: 0}
+  timerbg: {fileID: 0}
+  PostIt: {fileID: 0}
+  WinPanel: {fileID: 0}
+  Shuttle: {fileID: 0}
+  breatheSound: {fileID: 0}
   decreaseTime: 5
   increaseTime: 5
+  trash: {fileID: 0}
 --- !u!114 &1769748469094974812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,3 +280,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c5a1141f179d44a9152dd1f1dacbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbit: {fileID: 0}
+  upPosition: 0
+  downPosition: 0
+--- !u!64 &6909953740640376857
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176266278726773163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 137df3466902d424983627567b86735e, type: 3}

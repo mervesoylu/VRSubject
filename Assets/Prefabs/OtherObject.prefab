@@ -11,15 +11,15 @@ GameObject:
   - component: {fileID: 3790682341319227817}
   - component: {fileID: 3790682341319227825}
   - component: {fileID: 3790682341319227827}
-  - component: {fileID: 3790682341319227826}
   - component: {fileID: 3790682341319227820}
   - component: {fileID: 3790682341319227824}
   - component: {fileID: 3790682341319227822}
   - component: {fileID: 7317741634839090706}
   - component: {fileID: 1686909577422407338}
+  - component: {fileID: 8629990618263934125}
   m_Layer: 0
   m_Name: OtherObject
-  m_TagString: Object
+  m_TagString: Oxygen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3790682341319227828}
-  m_Mesh: {fileID: 4300000, guid: 5c39ec134a75d4a87a4a69a1be8dc5de, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 137df3466902d424983627567b86735e, type: 3}
 --- !u!23 &3790682341319227827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0edec395166a3244592f3532c7ce794c, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,20 +90,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3790682341319227826
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3790682341319227828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 5c39ec134a75d4a87a4a69a1be8dc5de, type: 3}
 --- !u!114 &3790682341319227820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,11 +273,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 2
-  addToCount: 0
   objectHandler: {fileID: 0}
   oxygenTimer: {fileID: 0}
   timer: {fileID: 0}
   timerbg: {fileID: 0}
+  PostIt: {fileID: 0}
+  WinPanel: {fileID: 0}
+  Shuttle: {fileID: 0}
+  breatheSound: {fileID: 0}
   decreaseTime: 5
   increaseTime: 5
   trash: {fileID: 0}
@@ -307,6 +296,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f82bf1157aca4b49ad0f3941bb9b5f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correct: {fileID: 0}
   incorrect: {fileID: 0}
+  correct: {fileID: 0}
+  oxygen: {fileID: 0}
+  trash: {fileID: 0}
+  Player: {fileID: 0}
   buttonPressed: 0
+--- !u!64 &8629990618263934125
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3790682341319227828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 137df3466902d424983627567b86735e, type: 3}
