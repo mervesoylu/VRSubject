@@ -128,7 +128,7 @@ MonoBehaviour:
     value: {r: 0.05866976, g: 0.04045035, b: 0.084905684, a: 1}
   ambientOnly:
     overrideState: 1
-    value: 1
+    value: 0
   noiseFilterTolerance:
     overrideState: 0
     value: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 1.5
+    value: 1
   directLightingStrength:
     overrideState: 0
     value: 0
