@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 1f5fa0ed9677f3a4ab0816a609b657ce, type: 3}
+  - {fileID: 2100000, guid: d9746abb2e9f5cc4f9b7d7dd117fa374, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,8 +149,11 @@ MonoBehaviour:
   timer: {fileID: 0}
   timerbg: {fileID: 0}
   PostIt: {fileID: 0}
-  WinPanel: {fileID: 0}
+  WinPanel1: {fileID: 0}
+  WinPanel2: {fileID: 0}
+  WinPanel3: {fileID: 0}
   Shuttle: {fileID: 0}
+  breatheSound: {fileID: 0}
   decreaseTime: 5
   increaseTime: 5
   trash: {fileID: 0}
